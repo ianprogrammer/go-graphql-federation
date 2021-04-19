@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"graphql-example-ifood/accounts/graph"
+	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph"
 
 	"github.com/99designs/gqlgen/example/federation/accounts/graph/generated"
 	"github.com/99designs/gqlgen/graphql/handler"

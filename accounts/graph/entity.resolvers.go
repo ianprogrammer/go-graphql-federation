@@ -5,14 +5,21 @@ package graph
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph/generated"
 	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph/model"
 )
 
 func (r *entityResolver) FindUserByID(ctx context.Context, id string) (*model.User, error) {
-	panic(fmt.Errorf("not implemented"))
+	name := "User " + id
+	if id == "1234" {
+		name = "Me"
+	}
+
+	return &model.User{
+		ID:       id,
+		Username: name,
+	}, nil
 }
 
 // Entity returns generated.EntityResolver implementation.
