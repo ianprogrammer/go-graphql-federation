@@ -8,10 +8,10 @@ import (
 
 	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph"
 
-	"github.com/99designs/gqlgen/example/federation/accounts/graph/generated"
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/handler/debug"
 	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph/generated"
 )
 
 const defaultPort = "4001"

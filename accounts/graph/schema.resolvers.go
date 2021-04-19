@@ -5,14 +5,16 @@ package graph
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph/generated"
 	"github.com/ianprogrammer/graphql-example-ifood/accounts/graph/model"
 )
 
 func (r *queryResolver) Me(ctx context.Context) (*model.User, error) {
-	panic(fmt.Errorf("not implemented"))
+	return &model.User{
+		ID:       "1234",
+		Username: "Me",
+	}, nil
 }
 
 // Query returns generated.QueryResolver implementation.
